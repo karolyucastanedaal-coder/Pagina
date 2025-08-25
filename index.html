@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="en">
+<!-- Comienzo del documento HTML. El atributo 'lang' indica que el idioma principal es inglés -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Define la codificación de caracteres como UTF-8 -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Configura el diseño para que sea responsive en dispositivos móviles -->
+
+  <title>Día del Ingeniero</title>
+  <!-- Título que se muestra en la pestaña del navegador -->
+
+  <style>
+    /* Estilos generales del cuerpo del documento */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Aplicar padding a las principales secciones del layout */
+    header, nav, main, footer {
+      padding: 20px;
+    }
+
+    /* Estilo del encabezado (header) */
+    header {
+      background: #9b22c7;
+      color: white;
+      text-align: center;
+    }
+
+    /* Estilo del menú de navegación */
+    nav {
+      background: #9b22c7;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Estilo del texto de la etiqueta en el menú */
+    nav label {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Estilo del menú desplegable (select) */
+    nav select {
+      padding: 8px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      margin-left: 10px;
+    }
+
+    /* Estilo para cada sección del contenido principal */
+    section {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      background: white;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Estilo de los títulos h2 */
+    h2 {
+      color: #000000;
+    }
+
+    /* Estilo para elementos figure (contenedores de imágenes) */
+    figure {
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    /* Estilo para las imágenes dentro de figure */
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Estilo para el pie de página */
+    footer {
+      background: #9b22c7;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Estilo para citas destacadas */
+    blockquote {
+      font-style: italic;
+      background: #eee;
+      padding: 10px;
+      border-left: 4px solid #2c3e50;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Menú de navegación con acceso a secciones internas mediante anclas -->
+  <nav>
+    <label for="menu">Ir a sección: </label>
+    <select id="menu" onchange="location = this.value;">
+      <option value="#historia">Historia</option>
+      <option value="#ramas">Ramas</option>
+      <option value="#aportes">Aportes</option>
+      <option value="#personajes">Personajes</option>
+      <option value="#retos">Retos</option>
+      <option value="#frases-ingenieria">Frases</option>
+    </select>
+  </nav>
+
+  <main>
+    <!-- Sección: Historia del Día del Ingeniero -->
+    <section id="historia">
+      <h2>Historia del Día del Ingeniero</h2>
+      <p>En Colombia, el Día del Ingeniero se celebra el 17 de agosto, en conmemoración de la<br>
+        creación de la Sociedad Colombiana de Ingenieros (1887) y como reconocimiento al aporte<br>
+        de esta profesión al desarrollo del país.</p>
+
+      <!-- Imagen sobre la historia de la ingeniería -->
+      <figure>
+        <img src="imagenes/images.jpg" alt="Historia de la ingeniería" width="550">
+      </figure>
+    </section>
+
+    <!-- Sección: Ramas de la Ingeniería -->
+    <section id="ramas">
+      <h2>Ramas de la Ingeniería</h2>
+      <ul>
+        <li>Ingeniería Civil</li>
+        <li>Ingeniería de Sistemas</li>
+        <li>Ingeniería Mecánica</li>
+        <li>Ingeniería Eléctrica</li>
+        <li>Ingeniería Industrial</li>
+      </ul>
+
+      <!-- Imagen sobre las ramas -->
+      <figure>
+        <img src="imagenes/ramas.jpg" alt="Ramas de la ingeniería" width="550">
+      </figure>
+    </section>
+
+    <!-- Sección: Aportes de la Ingeniería -->
+    <section id="aportes">
+      <h2>Aportes de la Ingeniería</h2>
+      <ol>
+        <li><strong>Infraestructura:</strong> Construcción de carreteras, puentes, aeropuertos, presas y sistemas de transporte.</li>
+        <li><strong>Tecnología:</strong> Desarrollo de software, hardware, telecomunicaciones e innovación digital.</li>
+        <li><strong>Energía:</strong> Generación y distribución de electricidad (hidroeléctrica, térmica, solar, eólica).</li>
+        <li><strong>Salud:</strong> Creación de equipos médicos, prótesis, sistemas de diagnóstico y biotecnología.</li>
+        <li><strong>Industria:</strong> Automatización, maquinaria, procesos de producción y optimización de recursos.</li>
+        <li><strong>Medio ambiente:</strong> Tratamiento de aguas, gestión de residuos, energías limpias y sostenibilidad.</li>
+        <li><strong>Sociedad:</strong> Mejora de la calidad de vida mediante soluciones prácticas y seguras para las necesidades humanas.</li>
+      </ol>
+
+      <!-- Imagen sobre aportes -->
+      <figure>
+        <img src="imagenes/wed-070.jpg" alt="Aportes de la Ingeniería" width="550">
+      </figure>
+    </section>
+
+    <!-- Sección: Personajes importantes en la ingeniería colombiana -->
+    <section id="personajes">
+      <h2>Ingenieros Colombianos Destacados</h2>
+      <table border="1">
+        <tr>
+          <th>Ingeniero</th>
+          <th>Función / Aporte</th>
+          <th>Foto</th>
+        </tr>
+        <tr>
+          <td>Francisco Javier Cisneros</td>
+          <td>Fue un ingeniero civil colombo-venezolano que dirigió importantes proyectos ferroviarios en Colombia en el siglo XIX, como el Ferrocarril de Antioquia.</td>
+          <td><img src="imagenes/francisco.jpg" alt="Francisco Javier Cisneros" width="100"></td>
+        </tr>
+        <tr>
+          <td>Julio Garavito Armero</td>
+          <td>Reconocido ingeniero, astrónomo y matemático colombiano; sus estudios sobre la mecánica celeste fueron fundamentales. Su rostro aparece en el billete de 20.000 pesos.</td>
+          <td><img src="imagenes/Julio_Garavito_Armero.gif" alt="Julio Garavito Armero" width="100"></td>
+        </tr>
+        <tr>
+          <td>Guillermo González Zuleta</td>
+          <td>Considerado pionero en la ingeniería estructural en Colombia; diseñó importantes edificios y obras civiles del siglo XX.</td>
+          <td><img src="imagenes/images (1).jpg" alt="Guillermo González Zuleta" width="100"></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Sección: Retos actuales de la ingeniería -->
+    <section id="retos">
+      <h2>Retos Actuales de la Ingeniería</h2>
+      <p>La ingeniería enfrenta hoy grandes desafíos globales que requieren innovación y responsabilidad. Entre ellos destacan la lucha contra el cambio climático
+        mediante tecnologías sostenibles y energías limpias, el desarrollo de ciudades inteligentes e infraestructura resiliente, y la transformación digital con
+        inteligencia artificial, automatización y ciberseguridad. También son claves los avances en salud a través de la ingeniería biomédica, así como garantizar 
+        la ética, la equidad y el acceso a la tecnología. Estos retos exigen soluciones creativas, multidisciplinarias y comprometidas con el bienestar social y ambiental.</p>
+
+      <!-- Imagen sobre retos -->
+      <figure>
+        <img src="imagenes/retos.webp" alt="Retos de la ingeniería" width="550">
+      </figure>
+    </section>
+
+    <!-- Sección: Frases célebres relacionadas con la ingeniería -->
+    <section id="frases-ingenieria">
+      <h2>Frases Célebres sobre la Ingeniería</h2>
+      <ul>
+        <li><strong>"La ciencia puede divertirnos y fascinarnos, pero es la ingeniería la que cambia el mundo."</strong> — Isaac Asimov</li>
+        <li><strong>"Los ingenieros, como arquitectos del mundo moderno, construyen el futuro con las ideas del presente."</strong> — Anónimo</li>
+        <li><strong>"La ingeniería es el arte de dirigir los grandes recursos de la naturaleza para uso y conveniencia del hombre."</strong> — Thomas Tredgold</li>
+        <li><strong>"Un buen ingeniero es una persona que hace un diseño que funciona con el mínimo costo y máxima eficiencia."</strong> — Freeman Dyson</li>
+        <li><strong>"La ingeniería es imaginar lo que nunca ha sido y preguntar: ¿por qué no?"</strong> — Theodore von Karman</li>
+        <li><strong>"No hay límites para lo que la ingeniería puede lograr, excepto los de nuestra propia imaginación."</strong> — Anónimo</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Karol Yurley Castañeda Aldana-137349</p>
+  </footer>
+
+</body>
+</html>
+
